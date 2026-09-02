@@ -52,6 +52,7 @@ export const Navbar: React.FC = () => {
       ],
     },
     { name: "Our Work", href: "/#testimonials" },
+    { name: "Blog", href: "/blog", isRoute: true },
     { name: "Contact", href: "/contact", isRoute: true },
   ];
 
@@ -74,6 +75,10 @@ export const Navbar: React.FC = () => {
     }
     if (location.pathname === "/about") {
       setActiveNav("About Us");
+      return;
+    }
+    if (location.pathname === "/blog") {
+      setActiveNav("Blog");
       return;
     }
     if (

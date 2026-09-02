@@ -5,6 +5,7 @@ import { HomePage } from "./pages/HomePage";
 import { AboutPage } from "./pages/AboutPage";
 import { ServicesPage } from "./pages/ServicesPage";
 import { PropertyManagementPage } from "./pages/PropertyManagementPage";
+import { BlogPage } from "./pages/BlogPage";
 import { ContactPage } from "./pages/ContactPage";
 
 export function App() {
@@ -18,6 +19,7 @@ export function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/property-management" element={<PropertyManagementPage />} />
+            <Route path="/blog" element={<BlogPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>

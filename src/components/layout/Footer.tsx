@@ -20,7 +20,6 @@ export const Footer: React.FC = () => {
       <Container>
         {/* 4 Equal Columns Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-8 xl:gap-12 pb-14">
-          
           {/* Col 1: Brand Info */}
           <div className="space-y-4">
             <Link
@@ -139,13 +138,12 @@ export const Footer: React.FC = () => {
               </button>
             </form>
           </div>
-
         </div>
 
         {/* Bottom Bar: Copyright & Legal */}
         <div className="pt-8 border-t border-slate-300/70 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs sm:text-sm text-slate-600">
           <p>
-            © 2024 Daju Bhai Cleaning & Property Services. All rights reserved.
+            © 2026 Daju Bhai Cleaning & Property Services. All rights reserved.
           </p>
 
           <div className="flex items-center gap-6">
