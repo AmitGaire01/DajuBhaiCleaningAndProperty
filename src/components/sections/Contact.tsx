@@ -47,11 +47,13 @@ export const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-16 sm:py-20 lg:py-24 bg-[#002F54] text-slate-900">
+    <section
+      id="contact"
+      className="py-16 sm:py-20 lg:py-24 bg-[#002F54] text-slate-900"
+    >
       <Container className="max-w-[1248px]">
         {/* Top Section: Form on Left + Sidebar on Right */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
-          
           {/* Left Column: Request a Quote Form Card (686px approx) */}
           <div className="lg:col-span-7 bg-white rounded-3xl p-7 sm:p-9 md:p-11 shadow-2xl flex flex-col justify-between">
             <div>
@@ -101,7 +103,10 @@ export const Contact: React.FC = () => {
                   </button>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
+                <form
+                  onSubmit={handleSubmit}
+                  className="space-y-4 sm:space-y-5"
+                >
                   {/* Row 1: Full Name & Email Address */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
@@ -173,7 +178,9 @@ export const Contact: React.FC = () => {
                         <option value="" disabled>
                           Select a service
                         </option>
-                        <option value="residential">Residential Cleaning</option>
+                        <option value="residential">
+                          Residential Cleaning
+                        </option>
                         <option value="commercial">Commercial Services</option>
                         <option value="property">Property Maintenance</option>
                         <option value="bond">End of Lease / Bond Clean</option>
@@ -232,7 +239,6 @@ export const Contact: React.FC = () => {
 
           {/* Right Column: Contact Info Card + Map Card (457px approx) */}
           <div className="lg:col-span-5 flex flex-col gap-6">
-            
             {/* Card 1: Contact Information */}
             <div className="bg-[#00223D]/95 backdrop-blur-md rounded-3xl p-7 sm:p-8 border border-white/10 text-white shadow-xl flex flex-col justify-between">
               <div>
@@ -255,10 +261,10 @@ export const Contact: React.FC = () => {
                         PHONE
                       </span>
                       <a
-                        href="tel:5559876543"
+                        href="tel:1300325824"
                         className="text-base sm:text-lg font-bold text-white font-heading hover:text-white/80 transition-colors"
                       >
-                        (555) 987-6543
+                        1300 DAJU BHAI
                       </a>
                     </div>
                   </div>
@@ -273,10 +279,10 @@ export const Contact: React.FC = () => {
                         EMAIL
                       </span>
                       <a
-                        href="mailto:hello@cleanproperty.com"
+                        href="mailto:hello@dajubhaiservices.com.au"
                         className="text-sm font-medium text-white/90 hover:underline"
                       >
-                        hello@cleanproperty.com
+                        hello@dajubhaiservices.com.au
                       </a>
                     </div>
                   </div>
@@ -294,7 +300,7 @@ export const Contact: React.FC = () => {
                         Mon - Fri: 8:00 AM - 6:00 PM
                       </span>
                       <span className="block text-xs text-white/60 mt-0.5">
-                        Sat - Sun: Closed
+                        Sat - Sun: 9:00 AM - 4:00 PM
                       </span>
                     </div>
                   </div>
@@ -302,29 +308,32 @@ export const Contact: React.FC = () => {
               </div>
             </div>
 
-            {/* Card 2: Interactive Location Map Card */}
-            <div className="rounded-3xl overflow-hidden relative shadow-xl border border-white/10 flex-grow min-h-[260px] bg-slate-800 flex flex-col justify-end">
-              {/* Background Map Image */}
-              <img
-                src="/contact-map.png"
-                alt="Chicago Headquarters Map"
-                className="absolute inset-0 w-full h-full object-cover"
+            {/* Card 2: Real Interactive Sydney Google Map */}
+            <div className="rounded-3xl overflow-hidden relative shadow-xl border border-white/10 flex-grow min-h-[300px] bg-slate-800 flex flex-col justify-end">
+              {/* Real Interactive Google Maps Embed for Sydney */}
+              <iframe
+                title="Daju Bhai Sydney Location Map"
+                src="https://maps.google.com/maps?q=Sydney%20NSW%20Australia&t=&z=12&ie=UTF8&iwloc=&output=embed"
+                className="absolute inset-0 w-full h-full border-0"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
               />
 
               {/* Floating Headquarters Address Card */}
-              <div className="relative z-10 bg-white rounded-2xl p-4 sm:p-4.5 m-3.5 sm:m-4 shadow-xl border border-slate-100">
-                <span className="block text-xs font-extrabold text-slate-900 font-heading">
-                  Headquarters
-                </span>
+              <div className="relative z-10 bg-white/95 backdrop-blur-md rounded-2xl p-4 sm:p-4.5 m-3.5 sm:m-4 shadow-xl border border-slate-100/90 pointer-events-auto max-w-[280px]">
+                <div className="flex items-center gap-1.5 text-xs font-extrabold text-slate-900 font-heading">
+                  <span className="w-2 h-2 rounded-full bg-[#2D6B23] animate-pulse" />
+                  <span>Sydney Location</span>
+                </div>
                 <span className="block text-xs sm:text-sm text-slate-600 mt-0.5">
-                  456 Corporate Blvd, Suite 200
+                  Greater Sydney & Surrounds
                 </span>
                 <span className="block text-xs sm:text-sm text-slate-600">
-                  Chicago, IL 60601
+                  Sydney, NSW 2000, Australia
                 </span>
               </div>
             </div>
-
           </div>
         </div>
 
@@ -369,7 +378,6 @@ export const Contact: React.FC = () => {
             })}
           </div>
         </div>
-
       </Container>
     </section>
   );

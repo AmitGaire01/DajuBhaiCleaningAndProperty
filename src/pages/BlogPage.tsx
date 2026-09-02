@@ -78,37 +78,35 @@ export const BlogPage: React.FC = () => {
 
   return (
     <div className="bg-[#F8F9FA] min-h-screen text-slate-900 pb-20">
-      {/* 1. Hero Header Banner (Rounded Card matching Figma) */}
-      <div className="pt-6 sm:pt-8">
-        <Container className="max-w-[1248px]">
-          <section className="relative w-full min-h-[340px] sm:min-h-[380px] flex items-center bg-[#002F54] rounded-[28px] sm:rounded-[32px] overflow-hidden shadow-xl">
-            {/* Leaf with Dew Background */}
-            <img
-              src="/blog-hero-dew.png"
-              alt="Insights, Tips & Industry News"
-              className="absolute inset-0 w-full h-full object-cover object-center"
-            />
+      {/* 1. Hero Header Banner (Full Width Edge-to-Edge) */}
+      <section className="relative w-full min-h-[360px] sm:min-h-[420px] lg:min-h-[460px] flex items-center bg-[#002F54] overflow-hidden">
+        {/* Leaf with Dew Background */}
+        <img
+          src="/blog-hero-dew.png"
+          alt="Insights, Tips & Industry News"
+          className="absolute inset-0 w-full h-full object-cover object-center"
+        />
 
-            {/* Ambient Dark Navy Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#002F54]/95 via-[#002F54]/75 to-transparent" />
+        {/* Ambient Dark Navy Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#002F54]/95 via-[#002F54]/80 to-transparent" />
 
-            <div className="relative z-10 p-8 sm:p-14 lg:p-16 max-w-2xl">
-              <span className="inline-block bg-[#D5EDB7] text-[#2D6B23] font-bold text-xs px-3.5 py-1 rounded-full uppercase tracking-wider mb-4 font-heading">
-                OUR JOURNAL
-              </span>
+        <Container className="relative z-10 py-16 sm:py-20 lg:py-24 max-w-[1248px]">
+          <div className="max-w-2xl">
+            <span className="inline-block bg-[#D5EDB7] text-[#2D6B23] font-bold text-xs px-3.5 py-1 rounded-full uppercase tracking-wider mb-4 font-heading">
+              OUR JOURNAL
+            </span>
 
-              <h1 className="text-3xl sm:text-5xl font-extrabold text-white font-heading tracking-tight leading-tight">
-                Insights, Tips & Industry News
-              </h1>
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white font-heading tracking-tight leading-tight">
+              Insights, Tips & Industry News
+            </h1>
 
-              <p className="text-white/85 text-sm sm:text-base mt-4 font-normal leading-relaxed">
-                Expert advice and the latest updates from the forefront of
-                professional cleaning and property maintenance.
-              </p>
-            </div>
-          </section>
+            <p className="text-white/85 text-sm sm:text-base lg:text-lg mt-4 font-normal leading-relaxed">
+              Expert advice and the latest updates from the forefront of
+              professional cleaning and property maintenance.
+            </p>
+          </div>
         </Container>
-      </div>
+      </section>
 
       <Container className="max-w-[1248px] pt-10 sm:pt-14 space-y-12">
         {/* 2. Category Filter Pills */}
